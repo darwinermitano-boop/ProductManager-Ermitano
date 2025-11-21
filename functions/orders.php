@@ -8,7 +8,7 @@ function getAllOrders(){
 
     $query = "
     SELECT
-     invoice.inv_number AS id,
+     customer.cus_code AS id,
      CONCAT(customer.cus_fname, ' ', customer.cus_lname, ' ', customer.cus_initial) AS customer,
      DATE_FORMAT(invoice.inv_date, '%d %M, %Y') AS date,
      invoice.inv_subtotal,
@@ -17,7 +17,7 @@ function getAllOrders(){
      FROM invoice
      LEFT JOIN customer
      On invoice.cus_code = customer.cus_code
-     ORDER BY invoice.inv_number DESC
+     ORDER BY customer.cus_code DESC
      ";
 
     $result= $conn->query($query); //Executes query
