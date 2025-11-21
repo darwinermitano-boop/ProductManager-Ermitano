@@ -19,7 +19,7 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Orders</h1>        
+        <h1 class="h2">Order</h1>        
       </div>
 
       <!-- <a href="products-form.php" class="btn btn-success text-white mb-3 float-right"><i class="fas fa-plus-square"></i> New Product</a>
@@ -59,12 +59,12 @@
                     <a href="" class="text-white"><i class="fas fa-pen"></i></a>
                   </label>
                   <label class="btn btn-danger btn-sm">
-                    <a href="products/delete.php?id=<?=$product['p_code']?>" class="text-white"><i class="fas fa-trash"></i></a>
+                    <a href="orders/delete.php?id=<?=$orders['id']?>" class="text-white"><i class="fas fa-trash"></i></a>
                   </label>
                 </div>
               </td>
             </tr>
-          <?php  } ?>      
+          <?php  } ?> 
           </tbody>
         </table>
       </div>

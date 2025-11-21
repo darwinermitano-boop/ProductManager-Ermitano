@@ -32,6 +32,6 @@ function getAllOrders(){
 
 function deleteOrder($id){
     $conn = Connect();
-    $queru = "DELETE FROM invoice WHERE inv_number=$id";
+    $query = "DELETE FROM invoice WHERE inv_number=$id";
     return $conn->query($uqery);
 }
