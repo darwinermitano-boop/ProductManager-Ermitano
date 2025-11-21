@@ -17,7 +17,7 @@ function getAllOrders(){
      FROM invoice
      LEFT JOIN customer
      On invoice.cus_code = customer.cus_code
-     ORDER BY customer.cus_code DESC
+     ORDER BY customer.cus_code ASC
      ";
 
     $result= $conn->query($query); //Executes query
